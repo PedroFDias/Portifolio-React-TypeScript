@@ -1,0 +1,29 @@
+#linksIcons {
+    display: flex;
+    grid-area: links;
+    gap: 20px;
+}
+
+#linksIcons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    text-decoration: none;
+
+    i {
+        background: transparent;
+        font-size: 20px;
+    }
+
+    &:hover {
+        background: #0ef;
+        color: #081b29;
+        box-shadow: 0 0 20px #0fe;
+    }
+}

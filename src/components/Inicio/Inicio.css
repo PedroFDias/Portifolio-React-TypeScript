@@ -1,0 +1,214 @@
+#inicio {
+    .container{
+        padding-left: 0;
+    }
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: #d7f9ff;
+
+    #apresentacao {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+
+        .apresentacao {
+            display: grid;
+            grid-template-areas:
+                "apresentacao img"
+                "apresentacao img"
+                "resumo         img"
+                "links         img"
+                "saibaMais    img";
+            flex-direction: column;
+            gap: 30px;
+
+            .apresentacao-script {
+                font-family: "Chakra Petch" !important;
+                grid-area: apresentacao;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                width: 70%;
+
+                h1 {
+                    font-weight: 800;
+                    font-size: 4rem;
+                }
+
+                h6 {
+                    font-weight: 800;
+                    font-size: 1.3rem;
+                }
+
+                h3 {
+                    font-weight: 800;
+                    font-size: 2rem;
+                }
+            }
+
+            div {
+                width: 70%;
+
+                p {
+                    font-family: 'Inter', sans-serif !important;
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+            }
+
+            .circulo-fora {
+                grid-area: img;
+                width: fit-content;
+                height: fit-content;
+                padding: 4px;
+                background-color: #081b29;
+                /* Borda externa - amarelo mostarda */
+                border-radius: 100%;
+                display: flex;
+
+                .circulo-dentro {
+                    width: 345px;
+                    height: 345px;
+                    background-color: #01080e;
+                    /* Borda interna - laranja queimado */
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    #imgPerfil {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 340px;
+                        max-height: 340px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .maisSobre {
+            grid-area: saibaMais;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 28px;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 93% 100%, 0 100%);
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            font-weight: 600;
+            background: #0ef;
+            width: 180px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: translateY(3px);
+            }
+        }
+
+        div>h3>span {
+            color: #0ef;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:770px) {
+    #inicio {
+        margin-top: 70px;
+
+        #apresentacao {
+            margin: 0;
+            padding: 0;
+
+            .apresentacao {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 130px 1fr auto auto auto;
+                grid-template-areas:
+                    "apresentacao apresentacao"
+                    "img          img"
+                    "sobreMim     sobreMim"
+                    "saibaMais    saibaMais"
+                    "icons    icons";
+
+                .apresentacao-script {
+                    grid-area: apresentacao;
+                    width: 100%;
+                    gap: 0;
+
+                    h6 {
+                        font-size: 1rem;
+                    }
+
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                div {
+                    grid-area: sobreMim;
+                    width: 100%;
+
+                    p {
+                        grid-area: sobreMim;
+                        font-size: 0.8rem;
+                    }
+                }
+
+                #linksIcons {
+                    grid-area: icons;
+                    justify-content: center;
+                }
+
+                .circulo-fora {
+                    grid-area: img;
+                    justify-self: center;
+
+                    border: 1px solid rgba(0, 238, 255, 0.466);
+
+                    .circulo-dentro {
+                        background-color: #01080e;
+                        /* Borda interna - laranja queimado */
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: min-content;
+                        height: min-content;
+
+
+                        #imgPerfil {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 260px;
+                            max-height: 260px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                a {
+                    grid-area: saibaMais;
+                    justify-self: center;
+
+                    font-size: 0.9rem;
+
+                    padding: 8px;
+                }
+            }
+        }
+    }
+}

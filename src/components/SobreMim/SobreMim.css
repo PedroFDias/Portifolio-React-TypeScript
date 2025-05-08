@@ -1,0 +1,164 @@
+#sobre-mim {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+
+    .sobre-mim {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: space-around;
+
+        .info {
+            display: grid;
+            grid-template-areas:
+                "titulo    png"
+                "descricao png";
+            grid-template-columns: 1fr 400px;
+            grid-template-rows: 50px 1fr;
+            gap: 70px;
+
+            h2 {
+                grid-area: titulo;
+                text-align: left;
+                justify-content: center;
+            }
+
+            p {
+                grid-area: descricao;
+                text-align: justify;
+            }
+
+            img {
+                grid-area: png;
+                width: 100%;
+                justify-items: start;
+                filter: invert(90%);
+            }
+        }
+
+        .tecno {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+            h2 {
+                padding-bottom: 30px;
+                grid-area: titulo;
+                align-self: flex-start;
+            }
+
+            .carrossel {
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .swiper {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 250px;
+                justify-items: stretch;
+                animation: deslizar 15s linear infinite;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+
+                img {
+                    height: 50px;
+                    object-fit: contain;
+                    filter: grayscale(1);
+
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+
+                    align-self: center;
+
+                }
+            }
+
+        }
+
+        h2 {
+            font-family: "Chakra Petch";
+            text-decoration: none;
+            font-size: 45px;
+            color: #d7f9ff;
+            font-weight: bold;
+            background: transparent;
+        }
+
+        p {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #d7f9ff;
+        }
+    }
+}
+
+@keyframes deslizar {
+    to {
+        translate: calc(-8 * 250px);
+    }
+}
+
+@keyframes deslizar-mobile {
+    to {
+        translate: calc(-8 * 150px);
+    }
+}
+
+@media screen and (max-width:770px) {
+    #sobre-mim {
+        .sobre-mim {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    text-align: center;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+            .tecno {
+                display: block;
+
+                h2 {
+                    text-align: center;
+                }
+
+                .carrossel {
+                    .swiper {
+                        grid-auto-columns: 150px;
+                        animation: deslizar-mobile 10s linear infinite;
+
+                        img {
+                            filter: grayscale(0);
+                            height: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.fundo-section {
+    position: relative;
+    width: 100vw;
+    background: #01080e8f;
+    padding: 60px 0;
+    backdrop-filter: blur(10px);
+}
