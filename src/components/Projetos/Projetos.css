@@ -1,5 +1,4 @@
 #MeusProjetos {
-    width: 100%;
 
     .MeusProjetos {
         display: flex;
@@ -156,20 +155,84 @@
 
 }
 
-.overlay {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+.Fundo{
     position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
 }
 
-.modal {
+.meu-modal {
     position: fixed;
-    left: 50%;
     top: 50%;
-    z-index: 100;
-    background-color: #021017;
+    left: 50%;
     transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-areas:
+        "titulo   titulo   titulo"
+        "carrosel carrosel descricao"
+        "carrosel carrosel atuacao"
+        "carrosel carrosel tecnologias";
+    background: #021017;
+    border: 0.5px solid #d7f9ff6c;
+    padding: 20px;
+    border-radius: 0%;
+    width: 70vw;
+    min-height: 60vh;
+    text-align: center;
+    gap: 20px;
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #d7f9ff;
+        cursor: pointer;
+
+        &:hover {
+            color: #0ef;
+        }
+    }
+
+    #carouselExampleSlidesOnly #carrosel {
+        display: flex;
+        height: min-content;
+        align-items: start;
+        border-radius: 5px;
+    }
+
+    h4 {
+        grid-area: titulo;
+        color: #d7f9ff;
+
+    }
+
+    div {
+        grid-area: carrosel;
+    }
+
+    #modal-description {
+        grid-area: descricao;
+        color: #d7f9ff;
+        text-align: justify;
+    }
+
+    #tecnologias {
+        grid-area: tecnologias;
+        color: #d7f9ff;
+    }
+
+    #participacao {
+        grid-area: atuacao;
+        color: #d7f9ff;
+        text-align: justify;
+    }
 }
+
