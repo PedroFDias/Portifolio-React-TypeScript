@@ -1,5 +1,5 @@
 import type { Projeto } from '../../types/Projeto';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import projetosJson from '../../data/projetos.json';
 import Modal from 'react-modal';
 import { BotaoLink } from '../BotaoLink';
@@ -9,8 +9,15 @@ Modal.setAppElement('#root');
 
 export function Projeto() {
 
+    const modalRef = useRef(null);
+
+    const [domPronto, setDomPronto] = useState(false);
     const [aberto, setModalAberto] = useState(false);
     const [selecionado, setProjetoSelecionado] = useState<Projeto | null>(null);
+
+    useEffect(() => {
+        setDomPronto(true);
+    }, [])
 
     const openModal = (project: Projeto) => {
         setProjetoSelecionado(project);
@@ -23,7 +30,7 @@ export function Projeto() {
     };
 
     return (
-        <div id="MeusProjetos" className="fundo-section" >
+        <div id="MeusProjetos" className="fundo-section" ref={modalRef}>
             <div className="MeusProjetos container">
                 <a className="Titulo" href="">Meus<span>Projetos</span></a>
                 <div id="projetos" className="projetos">
@@ -40,25 +47,26 @@ export function Projeto() {
                     ))}
                 </div>
             </div>
-            <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo">
-                <button className="modal-close" aria-label="Fechar modal" onClick={closeModal}>✕</button>
-                <h4 id="modal-title">{selecionado?.titulo}</h4>
+            {domPronto && <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo" parentSelector={() => modalRef.current!}>
+                    <button className="modal-close" aria-label="Fechar modal" onClick={closeModal}>✕</button>
+                    <h4 id="modal-title">{selecionado?.titulo}</h4>
 
-                <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-                    <div id="carrosel" className="carousel-inner">
-                        {selecionado?.images.map((img: string, index: number) => (
-                            <div className={`carousel-item ${index === 0 ? 'active' : ' '}`} key={index}>
-                                <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
-                            </div>
-                        ))}
+                    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+                        <div id="carrosel" className="carousel-inner">
+                            {selecionado?.images.map((img: string, index: number) => (
+                                <div className={`carousel-item ${index === 0 ? 'active' : ' '}`} key={index}>
+                                    <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
 
-                <p id="modal-description">{selecionado?.descricao}</p>
-                <p id="participacao">{selecionado?.participacao}</p>
-                <p id="tecnologias">{selecionado?.tecnologias}</p>
+                    <p id="modal-description">{selecionado?.descricao}</p>
+                    <p id="participacao">{selecionado?.participacao}</p>
+                    <p id="tecnologias">{selecionado?.tecnologias}</p>
 
-            </Modal>
-        </div>
+                </Modal>
+            }
+       </div>
     );
 }
