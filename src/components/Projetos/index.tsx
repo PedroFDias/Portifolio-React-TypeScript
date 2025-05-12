@@ -1,4 +1,4 @@
-import type { Projeto } from '../../types/Projeto';
+import type Projeto  from '../../types/Projeto';
 import { useEffect, useRef, useState } from 'react';
 import projetosJson from '../../data/projetos.json';
 import Modal from 'react-modal';
@@ -47,7 +47,8 @@ export function Projeto() {
                     ))}
                 </div>
             </div>
-            {domPronto && <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo" parentSelector={() => modalRef.current!}>
+            {domPronto && 
+            <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo" parentSelector={() => modalRef.current!}>
                     <button className="modal-close" aria-label="Fechar modal" onClick={closeModal}>✕</button>
                     <h4 id="modal-title">{selecionado?.titulo}</h4>
 

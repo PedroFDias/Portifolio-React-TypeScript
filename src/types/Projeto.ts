@@ -1,4 +1,4 @@
-export interface Projeto {
+export default interface Projeto {
     id: number;
     titulo: string;
     descricao: string;
