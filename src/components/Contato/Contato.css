@@ -1,0 +1,86 @@
+.Contato {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 70vh;
+    width: 100%;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .Contatos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                background-color: #021017a2;
+                height: 50px;
+                clip-path: polygon(0 0, 100% 0, 100% 65%, 91% 100%, 0 100%);
+                border: 1px solid #122a2e;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                padding-inline: 15px;
+
+                i {
+                    background: transparent;
+                    color: #d7f9ff;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                    z-index: 2;
+                    border: 1px solid #0ef;
+                }
+            }
+        }
+
+        div .Titulo {
+            font-family: "Chakra Petch";
+            text-decoration: none;
+            font-size: 60px;
+            color: #d7f9ff;
+            font-weight: bold;
+            background: transparent;
+
+            span {
+                font-family: "Chakra Petch";
+                text-decoration: none;
+                font-size: 60px;
+                color: #0ef;
+            }
+        }
+    }
+}
+
+.mergulhadora {
+    position: absolute;
+    left: -230px;
+    bottom: 0;
+    width: 30vw;
+    animation: flutuar 5s infinite ease-in-out;
+    z-index: 1;
+}
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
