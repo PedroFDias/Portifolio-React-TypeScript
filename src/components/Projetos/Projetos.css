@@ -12,7 +12,7 @@
         .Titulo {
             font-family: "Chakra Petch";
             text-decoration: none;
-            font-size: 60px;
+            font-size: 3rem;
             color: #d7f9ff;
             font-weight: bold;
             background: transparent;
@@ -20,7 +20,7 @@
             span {
                 font-family: "Chakra Petch";
                 text-decoration: none;
-                font-size: 60px;
+                font-size: 3rem;
                 color: #0ef;
             }
         }
@@ -156,13 +156,13 @@
 }
 
 .Fundo{
-    position: fixed;
-    left: 0;
+    position: absolute;
     top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .meu-modal {
@@ -236,3 +236,6 @@
     }
 }
 
+body.ReactModal__Body--open {
+  overflow: hidden;
+}
