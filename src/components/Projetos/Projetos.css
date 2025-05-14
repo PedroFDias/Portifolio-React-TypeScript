@@ -130,47 +130,10 @@
 
 }
 
-.Fundo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1001;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-@media screen and (max-width:770px) {
-    #meusProjetos {
-        .MeusProjetos {
-            
-            
-            .Titulo,
-            .Titulo span {
-                font-size: 2rem;
-                align-self: center;
-            }
-
-            .projetos {
-                display: flex;
-                flex-wrap: wrap;
-
-                .projeto {
-                    max-width: 100%;
-                }
-            }
-        }
-    }
-
-}
-
-
-
 .meu-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: sticky;
+    top: 20%;
+    margin: 0 auto;
 
     display: grid;
     grid-template-areas:
@@ -237,6 +200,107 @@
     }
 }
 
-body.ReactModal__Body--open {
-  overflow: hidden;
+.Fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.425);
+}
+
+@media screen and (max-width:770px) {
+    #meusProjetos {
+        .MeusProjetos {
+
+
+            .Titulo,
+            .Titulo span {
+                font-size: 2rem;
+                align-self: center;
+            }
+
+            .projetos {
+                display: flex;
+                flex-wrap: wrap;
+
+                .projeto {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .meu-modal {
+        position: sticky;
+        top: 0;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        grid-template-areas:
+            "titulo"
+            "carrosel " 
+            "descricao"
+            "atuacao"
+            "tecnologias";
+        background: #021017;
+        border: 0.5px solid #d7f9ff6c;
+        padding: 20px;
+        border-radius: 0%;
+        text-align: center;
+        gap: 20px;
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            background: none;
+            border: none;
+            color: #d7f9ff;
+            cursor: pointer;
+
+            &:hover {
+                color: #0ef;
+            }
+        }
+
+        #carouselExampleSlidesOnly #carrosel {
+            display: flex;
+            height: min-content;
+            align-items: start;
+            border-radius: 5px;
+        }
+
+        h4 {
+            grid-area: titulo;
+            color: #d7f9ff;
+
+        }
+
+        div {
+            grid-area: carrosel;
+        }
+
+        #modal-description {
+            grid-area: descricao;
+            color: #d7f9ff;
+            text-align: justify;
+        }
+
+        #tecnologias {
+            grid-area: tecnologias;
+            color: #d7f9ff;
+        }
+
+        #participacao {
+            grid-area: atuacao;
+            color: #d7f9ff;
+            text-align: justify;
+        }
+    }
+
 }

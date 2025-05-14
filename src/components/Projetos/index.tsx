@@ -57,7 +57,7 @@ export function Projeto() {
                 </div>
             </motion.div>
             {domPronto &&
-                <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo" parentSelector={() => modalRef.current!}>
+                <Modal isOpen={aberto} onRequestClose={closeModal} className="meu-modal" overlayClassName="Fundo">
                     <button className="modal-close" aria-label="Fechar modal" onClick={closeModal}>✕</button>
                     <h4 id="modal-title">{selecionado?.titulo}</h4>
 
