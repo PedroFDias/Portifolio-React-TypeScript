@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styles from './Cabecalho.module.css';
+import './Cabecalho.css'
 
 export function Header() {
 
@@ -18,13 +18,13 @@ export function Header() {
     })
 
     return (
-        <header className={`${styles.cabecalho} ${scrolled ? styles.cabecalhoScroll : ''}`}>
+        <header className={`cabecalho ${scrolled ? "cabecalhoScroll" : ''}`}>
             <div className="container">
-                <div className={styles.header}>
-                    <a href='#inicio' className={styles.nome}>Pedro Dias</a>
-                    <button className={styles.hamburguer}></button>
-                    <nav className={styles.menu}>
-                        <a href="#sobreMim">Sobre mim</a>
+                <div className="header">
+                    <a className="nome" href="index.html"><strong>Pedro Dias</strong></a>
+                    <button className="hamburguer"></button>
+                    <nav className="menu">
+                        <a href="#sobreMim">Sobre Mim</a>
                         <a href="#meusProjetos">Projetos</a>
                         <a href="#sessaoContato">Contato</a>
                         <p className="direitos">© 2025 Pedro Dias. Todos os direitos reservados.</p>

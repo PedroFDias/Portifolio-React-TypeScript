@@ -7,7 +7,7 @@ export function Inicio() {
     return (
         <motion.div
             initial={{ opacity: 0, y: -30 }}
-            whileInView={{opacity :1, y:0, transition: { duration: 1.5}}}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
             viewport={{ once: false, amount: .3 }}
             id="inicio" className="container">
             <div className="container" id="apresentacao">
@@ -23,11 +23,11 @@ export function Inicio() {
                                 loop
                             />
                         </span> </h3>
-                        <div className="resumo">
-                            <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na PUC-Minas, com foco em
-                                desenvolvimento backend e experiências em projetos práticos.
-                            </p>
-                        </div>
+                    </div>
+                    <div className="resumo">
+                        <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na PUC-Minas, com foco em
+                            desenvolvimento backend e experiências em projetos práticos.
+                        </p>
                     </div>
                     <div id="linksIcons">
                         <BotaoLink link="https://github.com/PedroFDias" icon="bi bi-github" />

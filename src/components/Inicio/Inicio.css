@@ -53,6 +53,8 @@
                 .resumo > p{
                     grid-area: resumo;
                     display: block;
+                    opacity: 0.8;
+                    font-size: 1rem;
                 }
             }
 
@@ -126,27 +128,26 @@
 
 @media screen and (max-width:770px) {
     #inicio {
-        margin-top: 70px;
-
+        padding-top: -3%;
         #apresentacao {
             margin: 0;
             padding: 0;
-
             .apresentacao {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 130px 1fr auto auto auto;
+                gap: 5%;
                 grid-template-areas:
-                    "apresentacao apresentacao"
-                    "img          img"
-                    "sobreMim     sobreMim"
-                    "saibaMais    saibaMais"
-                    "icons    icons";
+                    "apresentacao "
+                    "img          "
+                    "sobreMim     "
+                    "saibaMais    "
+                    "icons    ";
 
                 .apresentacao-script {
                     grid-area: apresentacao;
                     width: 100%;
-                    gap: 0;
+            
 
                     h6 {
                         font-size: 1rem;
@@ -160,16 +161,16 @@
                         font-size: 1.5rem;
                     }
                 }
-
                 div {
-                    grid-area: sobreMim;
                     width: 100%;
 
                     p {
+                        display: block;
                         grid-area: sobreMim;
                         font-size: 0.8rem;
                     }
                 }
+
 
                 #linksIcons {
                     grid-area: icons;
