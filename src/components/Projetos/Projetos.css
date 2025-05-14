@@ -143,11 +143,12 @@
 @media screen and (max-width:770px) {
     #meusProjetos {
         .MeusProjetos {
-
+            
+            
             .Titulo,
             .Titulo span {
                 font-size: 2rem;
-
+                align-self: center;
             }
 
             .projetos {
