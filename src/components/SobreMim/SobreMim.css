@@ -120,20 +120,24 @@
 @media screen and (max-width:770px) {
     #sobreMim {
         .sobre-mim {
-            h2 {
-                font-size: 2rem;
-            }
 
             .info {
                 display: flex;
                 flex-direction: column;
 
                 h2 {
+                    font-size: 2rem;
+                    padding-left: 0%;
                     text-align: center;
                 }
 
                 img {
                     display: none;
+                }
+
+                p{
+                    padding-left: 0;
+                    padding: 1%;
                 }
             }
 
@@ -141,6 +145,7 @@
                 display: block;
 
                 h2 {
+                    font-size: 2rem;
                     text-align: center;
                 }
 
