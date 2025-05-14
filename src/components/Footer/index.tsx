@@ -16,8 +16,8 @@ export default function Footer() {
                         <div>
                             <nav>
                                 <a href="#inicio">Sobre</a>
-                                <a href="#MeusProjetos">Projetos</a>
-                                <a href="#Contato">Contato</a>
+                                <a href="#meusProjetos">Projetos</a>
+                                <a href="#sessaoContato">Contato</a>
                             </nav>
                         </div>
                     </div>

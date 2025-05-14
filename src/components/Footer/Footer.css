@@ -70,3 +70,22 @@
     background: #01080eda;
     padding: 60px 0;
 }
+
+@media screen and (max-width:770px) {
+    .footer {
+        display: flex;
+
+        .div1 {
+            display: flex;
+            width: 100%;
+            justify-content: left;
+            flex-direction: column;
+        }
+
+        .div2 {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}
