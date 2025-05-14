@@ -1,10 +1,15 @@
 import { ReactTyped } from "react-typed"
 import { BotaoLink } from '../BotaoLink';
 import './Inicio.css';
+import { motion } from "framer-motion";
 
 export function Inicio() {
     return (
-        <div id="inicio" className="container">
+        <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{opacity :1, y:0, transition: { duration: 1.5}}}
+            viewport={{ once: false, amount: .3 }}
+            id="inicio" className="container">
             <div className="container" id="apresentacao">
                 <div className="apresentacao">
                     <div className="apresentacao-script">
@@ -36,6 +41,6 @@ export function Inicio() {
                     <a className="maisSobre" href="">Mais Sobre mim</a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }

@@ -21,12 +21,12 @@ export function Header() {
         <header className={`${styles.cabecalho} ${scrolled ? styles.cabecalhoScroll : ''}`}>
             <div className="container">
                 <div className={styles.header}>
-                    <p className={styles.nome}>Pedro Dias</p>
+                    <a href='#inicio' className={styles.nome}>Pedro Dias</a>
                     <button className={styles.hamburguer}></button>
                     <nav className={styles.menu}>
-                        <a href="">Inicio</a>
-                        <a href="#MeusProjetos">Projetos</a>
-                        <a href="#Contato">Contato</a>
+                        <a href="#sobreMim">Sobre mim</a>
+                        <a href="#meusProjetos">Projetos</a>
+                        <a href="#sessaoContato">Contato</a>
                         <p className="direitos">© 2025 Pedro Dias. Todos os direitos reservados.</p>
                     </nav>
                 </div>
