@@ -93,8 +93,14 @@
             display: flex;
             flex-wrap: wrap;
 
-            div h2 {
-                font-size: 2rem;
+            div {
+                display: flex;
+                justify-content: left;
+
+                h2 {
+                    font-size: 2rem;
+                    text-align: left;
+                }
             }
 
             .Contatos {
