@@ -35,7 +35,7 @@ export function Inicio() {
                     </div>
                     <div className="circulo-fora">
                         <div id="imagemPerfil" className="circulo-dentro">
-                            <img id="imgPerfil" src="../../public/imagens/perfil2.png" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
+                            <img id="imgPerfil" src="public/imagens/perfil2.png" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
                         </div>
                     </div>
                     <a className="maisSobre" href="">Mais Sobre mim</a>
