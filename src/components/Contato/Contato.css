@@ -118,7 +118,7 @@
     }
 
     .mergulhadora {
-        position: absolute;
+        position: fixed;
         left: 75%;
         bottom: 150px;
         width: 60vw;
