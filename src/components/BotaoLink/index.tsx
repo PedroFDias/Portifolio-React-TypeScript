@@ -1,4 +1,4 @@
-import './botao.css';
+import './Botao.css';
 
 type BotaoLinkProps = {
     link: string;
