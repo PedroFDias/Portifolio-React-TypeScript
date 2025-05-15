@@ -9,7 +9,7 @@ export function SobreMim() {
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-                    viewport={{ once: false, amount: .3 }}
+                    viewport={{ once: false, amount: .4 }}
                     className="info">
                     <h2>Sobre mim</h2>
                     <p>Sou um desenvolvedor em formação, apaixonado por backend e pela criação de soluções que conectam
@@ -21,7 +21,7 @@ export function SobreMim() {
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-                    viewport={{ once: false, amount: .3 }}
+                    viewport={{ once: false, amount: .4}}
                     className="tecno">
                     <h2>Tecnologias</h2>
                     <div className="carrossel">

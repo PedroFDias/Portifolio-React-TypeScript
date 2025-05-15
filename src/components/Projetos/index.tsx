@@ -35,7 +35,7 @@ export function Projeto() {
             <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0, transition: {  duration: 1 } }}
-                viewport={{ once: false, amount: .2 }}
+               
                 className="MeusProjetos container">
                 <a className="Titulo" href="">Meus<span>Projetos</span></a>
                 <div id="projetos" className="projetos">
@@ -63,8 +63,8 @@ export function Projeto() {
 
                     <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                         <div id="carrosel" className="carousel-inner">
-                            {selecionado?.images.map((img: string, index: number) => (
-                                <div className={`carousel-item ${index === 0 ? 'active' : ' '}`} key={index}>
+                            {selecionado?.images.map((img, index) => (
+                                <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
                                     <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
                                 </div>
                             ))}
@@ -74,7 +74,6 @@ export function Projeto() {
                     <p id="modal-description">{selecionado?.descricao}</p>
                     <p id="participacao">{selecionado?.participacao}</p>
                     <p id="tecnologias">{selecionado?.tecnologias}</p>
-
                 </Modal>
             }
         </div>

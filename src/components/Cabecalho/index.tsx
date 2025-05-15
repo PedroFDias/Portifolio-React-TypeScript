@@ -4,6 +4,7 @@ import './Cabecalho.css'
 export function Header() {
 
     const [scrolled, setScroll] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(() => {
         const Scrolled = () => {
@@ -21,9 +22,9 @@ export function Header() {
         <header className={`cabecalho ${scrolled ? "cabecalhoScroll" : ''}`}>
             <div className="container">
                 <div className="header">
-                    <a className="nome" href="index.html"><strong>Pedro Dias</strong></a>
-                    <button className="hamburguer"></button>
-                    <nav className="menu">
+                    <a className="nome" href="#inicio"><strong>Pedro Dias</strong></a>
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="hamburguer"></button>
+                    <nav className={`menu ${menuOpen ? "ativo" : " "}`}>
                         <a href="#sobreMim">Sobre Mim</a>
                         <a href="#meusProjetos">Projetos</a>
                         <a href="#sessaoContato">Contato</a>

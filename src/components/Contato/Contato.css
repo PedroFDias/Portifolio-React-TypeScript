@@ -116,4 +116,28 @@
             }
         }
     }
+
+    .mergulhadora {
+        position: absolute;
+        left: 75%;
+        bottom: 150px;
+        width: 60vw;
+        transform: scaleX(-1);
+        animation: flutuarMobile 5s infinite ease-in-out !important;
+        z-index: 1;
+    }
+
+    
+}
+
+@keyframes flutuarMobile {
+  0% {
+    transform: scaleX(-1) translateY(0);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-20px);
+  }
+  100% {
+    transform: scaleX(-1) translateY(0);
+  }
 }

@@ -86,6 +86,9 @@
             display: flex;
             justify-content: center;
 
+            p{
+                align-self: flex-start;
+            }
         }
     }
 }

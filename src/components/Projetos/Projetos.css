@@ -233,7 +233,6 @@
     }
 
     .meu-modal {
-        position: sticky;
         top: 0;
         margin: 0 auto;
         width: 100vw;
@@ -268,7 +267,7 @@
             }
         }
 
-        #carouselExampleSlidesOnly #carrosel {
+        #carrosel {
             display: flex;
             height: min-content;
             align-items: start;
