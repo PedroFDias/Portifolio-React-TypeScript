@@ -41,7 +41,7 @@ export default function Contato() {
                         viewport={{ once: false, amount: .2 }}
                     ><i className="bi bi-instagram"> pedrofdias</i></motion.a>
                 </motion.div>
-                <img className='mergulhadora' src="../../public/imagens/mergulhadora2.png" alt="" />
+                <img className='mergulhadora' src="imagens/mergulhadora2.png" alt="" />
             </div>
         </div>
     );
