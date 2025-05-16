@@ -53,7 +53,9 @@
         "descricao": "Este projeto é uma aplicação Java (ou a linguagem que você usou) que permite consultar informações detalhadas sobre veículos utilizando a FIPE API. O programa faz uma requisição HTTP para a API e retorna dados como marca, modelo, ano e preço médio de veículos.",
         "images": [
             "imagens/projetos/portifolio1.png",
-            "imagens/projetos/portifolio2.png"
+            "imagens/projetos/portifolio2.png",
+            "imagens/projetos/portifolio3.png",
+            "imagens/projetos/portifolio4.png"
         ],
         "link": "https://github.com/PedroFDias/Portifolio",
         "tecnologias": "CSS, SCSS, JavaScript",
