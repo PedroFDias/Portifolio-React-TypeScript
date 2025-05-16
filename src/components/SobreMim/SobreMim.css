@@ -31,6 +31,19 @@
                 grid-area: descricao;
                 text-align: justify;
                 display: block;
+
+                .tec1{
+                    color: aquamarine;
+                    font-weight: bold;
+                }
+                .tec2{
+                    color: rgb(65, 194, 199);
+                    font-weight: bold;
+                }
+                .tec3{
+                    color: rgb(119, 185, 99);
+                    font-weight: bold;
+                }
             }
 
             img {
