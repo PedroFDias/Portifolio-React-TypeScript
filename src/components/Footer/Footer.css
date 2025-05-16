@@ -88,6 +88,7 @@
 
             p{
                 align-self: flex-start;
+                margin: auto;
             }
         }
     }

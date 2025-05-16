@@ -49,6 +49,7 @@
         display: block;
         font-size: x-small;
         margin-top: auto;
+        text-align: center;
     }
 
     .menu {
@@ -130,7 +131,7 @@
             }
 
             p{
-                margin-top: auto;
+                margin: auto auto 0;
                 display: block;
                 font-size: 1rem;
             }
