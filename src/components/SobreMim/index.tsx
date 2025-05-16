@@ -18,7 +18,7 @@ export function SobreMim() {
                 <motion.div
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-                    viewport={{ once: false, amount: .4 }}
+                    viewport={{ once: false, amount: .5 }}
                     className="tecno">
                     <h2>Tecnologias</h2>
                     <div className="carrossel">
@@ -27,6 +27,8 @@ export function SobreMim() {
                             <img src="imagens/tecnologias/spring.svg" title="Spring" />
                             <img src="imagens/tecnologias/js.png" title="JavaScript" />
                             <img src="imagens/tecnologias/node.png" title="Node.js" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" title='TypeScript'/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title='React'/>
                             <img src="imagens/tecnologias/c-sharp (1).png" title="C#" />
                             <img src="imagens/tecnologias/git.png" title="Git" />
                             <img src="imagens/tecnologias/bootstrap.png" title="Bootstrap" />
@@ -36,6 +38,8 @@ export function SobreMim() {
                             <img src="imagens/tecnologias/spring.svg" title="Spring" />
                             <img src="imagens/tecnologias/js.png" title="Java Script" />
                             <img src="imagens/tecnologias/node.png" title="Node.js" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" title='TypeScript'/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title='React'/>
                             <img src="imagens/tecnologias/c-sharp (1).png" title="C#" />
                             <img src="imagens/tecnologias/git.png" title="Git" />
                             <img src="imagens/tecnologias/bootstrap.png" title="Bootstrap" />

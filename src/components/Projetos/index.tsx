@@ -44,7 +44,7 @@ export function Projeto() {
                         <motion.div
                             initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0, transition: {duration: 1 } }}
-                            viewport={{ once: false, amount: .2 }}
+                            viewport={{ once: false, amount: .3 }}
                             className="projeto" key={projeto.id}>
                             <h4>{projeto.titulo}</h4>
                             <img src={projeto.images[0]} alt={projeto.titulo} />

@@ -25,7 +25,7 @@ export function Header() {
                     <a className="nome" href="#inicio"><strong>Pedro Dias</strong></a>
                     <button onClick={() => setMenuOpen(!menuOpen)} className="hamburguer"></button>
                     <nav className={`menu ${menuOpen ? "ativo" : " "}`}>
-                        <a href="#sobreMim">Sobre Mim</a>
+                        <a href="#sobreMim">Sobre mim</a>
                         <a href="#meusProjetos">Projetos</a>
                         <a href="#sessaoContato">Contato</a>
                         <p className="direitos">© 2025 Pedro Dias. Todos os direitos reservados.</p>

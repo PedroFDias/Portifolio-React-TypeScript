@@ -73,9 +73,7 @@
         background-color: transparent;
         font-size: 20px;
 
-        &:hover {
-            color: #0ef;
-        }
+        
     }
 
     nav {
@@ -86,9 +84,13 @@
         background-color: transparent;
 
         a {
-            color: white;
+            color: #d7f9ff;
             text-decoration: none;
             background-color: transparent;
+
+            &:hover {
+            color: rgba(0, 238, 255, 0.336);
+        }
         }
     }
 }

@@ -120,13 +120,13 @@
 
 @keyframes deslizar {
     to {
-        translate: calc(-8 * 250px);
+        translate: calc(-10 * 250px);
     }
 }
 
 @keyframes deslizar-mobile {
     to {
-        translate: calc(-8 * 150px);
+        translate: calc(-10 * 150px);
     }
 }
 
