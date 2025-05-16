@@ -16,3 +16,10 @@ body {
     background-attachment: fixed;
     backdrop-filter: blur(20px);
 }
+
+
+@media screen and (width>720px) {
+    .container {
+        width: 1200px !important;
+    }
+}
