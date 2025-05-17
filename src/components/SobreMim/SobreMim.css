@@ -76,6 +76,7 @@
             .swiper {
                 display: grid;
                 grid-auto-flow: column;
+                overflow: visible;
                 grid-auto-columns: 250px;
                 justify-items: stretch;
                 animation: deslizar 15s linear infinite;

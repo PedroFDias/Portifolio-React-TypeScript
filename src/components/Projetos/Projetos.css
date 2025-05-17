@@ -165,13 +165,6 @@
         }
     }
 
-    #carouselExampleSlidesOnly #carrosel {
-        display: flex;
-        height: min-content;
-        align-items: start;
-        border-radius: 5px;
-    }
-
     h4 {
         grid-area: titulo;
         color: #d7f9ff;
