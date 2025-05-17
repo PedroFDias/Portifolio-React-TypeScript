@@ -132,7 +132,7 @@
 
 .meu-modal {
     position: sticky;
-    top: 20%;
+    top: 8%;
     margin: 0 auto;
 
     display: grid;
@@ -145,8 +145,8 @@
     border: 0.5px solid #d7f9ff6c;
     padding: 20px;
     border-radius: 0%;
-    width: 70vw;
-    height: 60vh;
+    width: 90vw;
+    height: 80vh;
     text-align: center;
     gap: 20px;
 
@@ -191,6 +191,14 @@
         color: #d7f9ff;
         text-align: justify;
     }
+
+    .carrosel{
+        grid-area: carrosel;
+
+        img{
+            border-radius: 5px;
+        }
+    }
 }
 
 .Fundo {
@@ -228,7 +236,7 @@
     .meu-modal {
         top: 0;
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
 
         display: grid;
@@ -239,7 +247,7 @@
             "atuacao"
             "tecnologias";
         background: #021017;
-        border: 0.5px solid #d7f9ff6c;
+        border: none;
         padding: 20px;
         border-radius: 0%;
         text-align: center;
@@ -260,21 +268,10 @@
             }
         }
 
-        #carrosel {
-            display: flex;
-            height: min-content;
-            align-items: start;
-            border-radius: 5px;
-        }
-
         h4 {
             grid-area: titulo;
             color: #d7f9ff;
 
-        }
-
-        div {
-            grid-area: carrosel;
         }
 
         #modal-description {
@@ -292,6 +289,12 @@
             grid-area: atuacao;
             color: #d7f9ff;
             text-align: justify;
+        }
+
+        .carrosel {
+            grid-area: carrosel;
+            
+            
         }
     }
 

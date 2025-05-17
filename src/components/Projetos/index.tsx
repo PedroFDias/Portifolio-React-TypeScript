@@ -75,7 +75,8 @@ export function Projeto() {
                         pagination={{ clickable: true }}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
-                        style={{ width: '100%', height: 'auto' }}
+                        style={{ width: '100%', height: 'auto'}}
+                        className='carrosel'
                     >
                         {selecionado?.images.map((img, index) => (
                             <SwiperSlide key={index}>
