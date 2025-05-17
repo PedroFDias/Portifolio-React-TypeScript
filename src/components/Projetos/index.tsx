@@ -5,6 +5,10 @@ import Modal from 'react-modal';
 import { BotaoLink } from '../BotaoLink';
 import './Projetos.css';
 import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+
 
 Modal.setAppElement('#root');
 
@@ -34,8 +38,8 @@ export function Projeto() {
         <div id="meusProjetos" className="fundo-section" ref={modalRef}>
             <motion.div
                 initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0, transition: {  duration: 1 } }}
-               
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+
                 className="MeusProjetos container">
                 <a className="Titulo" href="">Meus<span>Projetos</span></a>
                 <div id="projetos" className="projetos">
@@ -43,7 +47,7 @@ export function Projeto() {
                     {projetosJson.map((projeto: Projeto) => (
                         <motion.div
                             initial={{ opacity: 0, y: 15 }}
-                            whileInView={{ opacity: 1, y: 0, transition: {duration: 1 } }}
+                            whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
                             viewport={{ once: false, amount: .3 }}
                             className="projeto" key={projeto.id}>
                             <h4>{projeto.titulo}</h4>
@@ -61,15 +65,24 @@ export function Projeto() {
                     <button className="modal-close" aria-label="Fechar modal" onClick={closeModal}>✕</button>
                     <h4 id="modal-title">{selecionado?.titulo}</h4>
 
-                    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-                        <div id="carrosel" className="carousel-inner">
-                            {selecionado?.images.map((img, index) => (
-                                <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={index}>
-                                    <img src={img} className="d-block w-100" alt={`Slide ${index + 1}`} />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+                        spaceBetween={50}
+                        slidesPerView={1}
+                        navigation
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        loop={true}
+                        pagination={{ clickable: true }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        style={{ width: '100%', height: 'auto' }}
+                    >
+                        {selecionado?.images.map((img, index) => (
+                            <SwiperSlide key={index}>
+                                <img src={img} style={{ width: '100%', height: 'auto' }} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
 
                     <p id="modal-description">{selecionado?.descricao}</p>
                     <p id="participacao">{selecionado?.participacao}</p>
