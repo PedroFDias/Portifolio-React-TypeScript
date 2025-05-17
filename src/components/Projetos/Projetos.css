@@ -235,7 +235,7 @@
 
     .meu-modal {
         top: 0;
-        margin: 0 auto;
+        
         width: 100%;
         height: 100vh;
 
@@ -248,7 +248,7 @@
             "tecnologias";
         background: #021017;
         border: none;
-        padding: 20px;
+        padding: 0% !important;
         border-radius: 0%;
         text-align: center;
         gap: 20px;
@@ -271,13 +271,14 @@
         h4 {
             grid-area: titulo;
             color: #d7f9ff;
-
+            padding-top: 20px;
         }
 
         #modal-description {
             grid-area: descricao;
             color: #d7f9ff;
             text-align: justify;
+            padding: 10px;
         }
 
         #tecnologias {
@@ -289,12 +290,15 @@
             grid-area: atuacao;
             color: #d7f9ff;
             text-align: justify;
+            padding: 10px;
         }
 
         .carrosel {
             grid-area: carrosel;
             
-            
+            img{
+                border-radius: 0;
+            }
         }
     }
 
