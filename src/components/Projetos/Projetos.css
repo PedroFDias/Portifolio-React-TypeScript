@@ -40,7 +40,7 @@
             gap: 15px;
             background-color: #021017;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
-            border: 1px solid #060808;
+            border: 1px solid #00474d36;
             transition: all 0.3s ease;
             padding: 20px;
             grid-column: span 1;
@@ -111,7 +111,7 @@
         h4 {
             font-family: "Chakra Petch", sans-serif;
             text-decoration: none;
-            color: #2bdefd;
+            color: #d7f9ff;
             background: transparent;
             font-size: 24px;
             text-align: center;

@@ -2,5 +2,7 @@
     display: block;
     text-decoration: none;
     color: #d7f9ff !important;
+    background-color: #d7f9ff00 !important;
     font-weight: 600;
+    border: 0.1px solid #d7f9ff !important;
 }
