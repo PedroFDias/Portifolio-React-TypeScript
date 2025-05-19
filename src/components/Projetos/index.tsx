@@ -9,7 +9,6 @@ import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 import type Projeto from '../../types/Projeto';
 import BotaoLinkTexto from '../BotaoLinkTexto'
-import { a, body } from 'framer-motion/client';
 
 
 Modal.setAppElement('#root');
