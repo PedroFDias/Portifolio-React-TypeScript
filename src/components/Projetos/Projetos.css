@@ -333,7 +333,7 @@
         flex-wrap: wrap;
         background: #021017;
         border: none;
-        padding: 0% !important;
+        padding: 0 ;
         border-radius: 0%;
         text-align: center;
         gap: 15px;
@@ -358,17 +358,18 @@
         .carroselDiv {
             width: 100%;
             height: auto;
-
+            padding: 0;
+        
             img {
-                border-radius: 10px;
+                border-radius: 0px;
             }
         }
 
         .info {
-            padding: 0 20px;
+            padding: 0 20px 50px;
 
             span {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             h4 {
@@ -381,7 +382,7 @@
                 grid-area: descricao;
                 color: #d7f9ff;
                 text-align: justify;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
 
             #tecnologias {
@@ -390,42 +391,42 @@
 
                 .divTecs {
                     .tec-1 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-2 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-3 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-4 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-5 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-6 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-7 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
 
                     .tec-8 {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
             }
 
             .botoesLinks {
                 a {
-                    font-size: 1.2rem !important;
+                    font-size: 1rem !important;
                 }
             }
 
@@ -433,7 +434,7 @@
                 grid-area: atuacao;
                 color: #d7f9ff;
                 text-align: justify;
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
     }
