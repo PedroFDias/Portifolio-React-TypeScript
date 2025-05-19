@@ -31,7 +31,7 @@
     {
         "id": 2,
         "titulo": "Order Mananger - API REST",
-        "descricao": "O OrderManager é um sistema backend desenvolvido em Java com Spring Boot, que simula o gerenciamento de pedidos em um e-commerce. A aplicação permite cadastrar produtos, registrar pedidos e acompanhar o histórico de compras de clientes. É estruturado em camadas (Controller, Service, Repository), seguindo boas práticas da arquitetura RESTful.",
+        "descricao": "O OrderManager é um sistema backend desenvolvido com o fim de gerenciar de pedidos em um e-commerce. A aplicação permite operações completas de CRUD. É estruturado em camadas (Controller, Service, Repository), seguindo boas práticas da arquitetura RESTful.",
         "images": [
             "imagens/projetos/OrderMananger1.png",
             "imagens/projetos/OrderMananger2.png",
