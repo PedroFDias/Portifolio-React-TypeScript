@@ -9,9 +9,9 @@
             "imagens/projetos/casacidada3.png",
             "imagens/projetos/casacidada4.png"
         ],
-        "link": "https://github.com/LucasDias2002/CasaCidada",
-        "tecnologias": "Java Script · CSS · NodeJs · Express · Sequeliza · Cloudinary · PostgreSQL",
-        "participacao": "No projeto, atuei na implementação da API e do backend, desenvolvendo funcionalidades como o CRUD de usuários e dados da instituição, integração com o banco de dados MySQL, e testes de requisições com ferramentas como Postman e Insomnia."
+        "linkGit": "https://github.com/LucasDias2002/CasaCidada",
+        "tecnologias": ["Java Script","CSS","NodeJs","Express","Sequeliza","Cloudinary","PostgreSQL"],
+        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
     },
     {
         "id": 2,
@@ -26,9 +26,9 @@
             "imagens/projetos/OrderMananger7.png",
             "imagens/projetos/OrderMananger8.png"
         ],
-        "link": "https://github.com/PedroFDias/Order-Mananger",
-        "tecnologias": "Java · Spring Boot · Spring Data JPA · Hibernate · PostgreSQL · Lombok · Maven · Insomnia",
-        "participacao": "No projeto, atuei na implementação da API e do backend, desenvolvendo funcionalidades como o CRUD de usuários e dados da instituição, integração com o banco de dados MySQL, e testes de requisições com ferramentas como Postman e Insomnia."
+        "linkGit": "https://github.com/PedroFDias/Order-Mananger",
+        "tecnologias": ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "PostgreSQL", "Lombok",  "Maven", "Insomnia"],
+        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
     },
     {
         "id": 3,
@@ -43,9 +43,9 @@
             "imagens/projetos/OrderMananger7.png",
             "imagens/projetos/OrderMananger8.png"
         ],
-        "link": "https://github.com/PedroFDias/SeachFipe",
-        "tecnologias": "Java · Spring Boot · Maven",
-        "participacao": "No projeto, atuei na implementação da API e do backend, desenvolvendo funcionalidades como o CRUD de usuários e dados da instituição, integração com o banco de dados MySQL, e testes de requisições com ferramentas como Postman e Insomnia."
+        "linkGit": "https://github.com/PedroFDias/SeachFipe",
+        "tecnologias": ["Java", "Spring Boot", "Maven"],
+        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
     },
     {
         "id": 4,
@@ -57,8 +57,8 @@
             "imagens/projetos/portifolio3.png",
             "imagens/projetos/portifolio4.png"
         ],
-        "link": "https://github.com/PedroFDias/Portifolio",
-        "tecnologias": "CSS, SCSS, JavaScript",
-        "participacao": "No projeto, atuei na implementação da API e do backend, desenvolvendo funcionalidades como o CRUD de usuários e dados da instituição, integração com o banco de dados MySQL, e testes de requisições com ferramentas como Postman e Insomnia."
+        "linkGit": "https://github.com/PedroFDias/Portifolio",
+        "tecnologias": ["CSS", "SCSS", "JavaScript"],
+        "participacao":["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
     }
 ]

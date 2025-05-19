@@ -40,7 +40,7 @@
             gap: 15px;
             background-color: #021017;
             clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
-            border: 1px solid #122a2e;
+            border: 1px solid #060808;
             transition: all 0.3s ease;
             padding: 20px;
             grid-column: span 1;
@@ -132,23 +132,19 @@
 
 .meu-modal {
     position: sticky;
-    top: 8%;
-    margin: 0 auto;
+    top: 10%;
 
-    display: grid;
-    grid-template-areas:
-        "titulo   titulo   titulo"
-        "carrosel carrosel descricao"
-        "carrosel carrosel atuacao"
-        "carrosel carrosel tecnologias";
+    margin: 0 auto;
+    display: flex;
     background: #021017;
-    border: 0.5px solid #d7f9ff6c;
-    padding: 20px;
-    border-radius: 0%;
-    width: 90vw;
-    height: 80vh;
-    text-align: center;
-    gap: 20px;
+    border: 0.5px solid rgba(216, 216, 216, 0.137) !important;
+    width: 85dvw;
+    height: 75dvh;
+
+
+    &:focus {
+        outline: none;
+    }
 
     .modal-close {
         position: absolute;
@@ -165,38 +161,132 @@
         }
     }
 
-    h4 {
-        grid-area: titulo;
-        color: #d7f9ff;
+    .carroselDiv {
+        width: clamp(400px, 60vw, 1000px);
 
+        align-self: center;
+        height: 100%;
+        margin: 0;
+        border-right: 0.5px solid rgba(216, 216, 216, 0.096);
+        padding: 25px;
+        background-color: #02030344;
+        display: flex;
+        align-content: center;
+
+        img {
+            border-radius: 10px;
+        }
     }
 
-    div {
-        grid-area: carrosel;
-    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 1fr;
+        padding: 25px;
+        gap: 15px;
+        overflow: auto;
 
-    #modal-description {
-        grid-area: descricao;
-        color: #d7f9ff;
-        text-align: justify;
-    }
 
-    #tecnologias {
-        grid-area: tecnologias;
-        color: #d7f9ff;
-    }
+        h4 {
+            color: #d7f9ff;
+            font-size: 1.25vw;
+        }
 
-    #participacao {
-        grid-area: atuacao;
-        color: #d7f9ff;
-        text-align: justify;
-    }
+        span {
+            display: flex;
+            font-size: 1vw;
+            color: rgba(0, 238, 255, 0.658);
+            padding-bottom: 8px;
+        }
 
-    .carrosel{
-        grid-area: carrosel;
+        #modal-description {
+            grid-area: descricao;
+            color: #d7f9ff;
+            text-align: justify;
+            font-size: 1vw;
+        }
 
-        img{
-            border-radius: 5px;
+        #tecnologias {
+            grid-area: tecnologias;
+            color: #d7f9ff;
+            font-size: 1vw;
+
+            .divTecs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .tec-1 {
+                    background-color: rgba(0, 238, 255, 0.801);
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-2 {
+                    background-color: #00c2cca9;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-3 {
+                    background-color: #074075c2;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-4 {
+                    background-color: rgba(0, 238, 255, 0.801);
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-5 {
+                    background-color: #00464d;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-6 {
+                    background-color: #0095a0;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-7 {
+                    background-color: #00464d;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+
+                .tec-8 {
+                    background-color: #00284dc2;
+                    color: #d7f9ff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                }
+            }
+
+        }
+
+        #participacao {
+            grid-area: atuacao;
+            color: #d7f9ff;
+            text-align: justify;
+            font-size: 1vw;
+        }
+
+        .carrosel {
+
+            img {
+                border-radius: 5px;
+            }
         }
     }
 }
@@ -211,7 +301,7 @@
     background: rgba(0, 0, 0, 0.425);
 }
 
-@media screen and (max-width:770px) {
+@media screen and (width<770px) {
     #meusProjetos {
         .MeusProjetos {
 
@@ -235,23 +325,19 @@
 
     .meu-modal {
         top: 0;
-        
+
         width: 100%;
         height: 100vh;
 
-        display: grid;
-        grid-template-areas:
-            "titulo"
-            "carrosel " 
-            "descricao"
-            "atuacao"
-            "tecnologias";
+        display: flex;
+        flex-wrap: wrap;
         background: #021017;
         border: none;
         padding: 0% !important;
         border-radius: 0%;
         text-align: center;
-        gap: 20px;
+        gap: 15px;
+        overflow: auto;
 
         .modal-close {
             position: absolute;
@@ -262,42 +348,92 @@
             border: none;
             color: #d7f9ff;
             cursor: pointer;
+            z-index: 2;
 
             &:hover {
                 color: #0ef;
             }
         }
 
-        h4 {
-            grid-area: titulo;
-            color: #d7f9ff;
-            padding-top: 20px;
+        .carroselDiv {
+            width: 100%;
+            height: auto;
+
+            img {
+                border-radius: 10px;
+            }
         }
 
-        #modal-description {
-            grid-area: descricao;
-            color: #d7f9ff;
-            text-align: justify;
-            padding: 10px;
-        }
+        .info {
+            padding: 0 20px;
 
-        #tecnologias {
-            grid-area: tecnologias;
-            color: #d7f9ff;
-        }
+            span {
+                font-size: 1.2rem;
+            }
 
-        #participacao {
-            grid-area: atuacao;
-            color: #d7f9ff;
-            text-align: justify;
-            padding: 10px;
-        }
+            h4 {
+                grid-area: titulo;
+                color: #d7f9ff;
+                font-size: 1.5rem;
+            }
 
-        .carrosel {
-            grid-area: carrosel;
-            
-            img{
-                border-radius: 0;
+            #modal-description {
+                grid-area: descricao;
+                color: #d7f9ff;
+                text-align: justify;
+                font-size: 1.2rem;
+            }
+
+            #tecnologias {
+                grid-area: tecnologias;
+                color: #d7f9ff;
+
+                .divTecs {
+                    .tec-1 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-2 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-3 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-4 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-5 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-6 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-7 {
+                        font-size: 1.2rem;
+                    }
+
+                    .tec-8 {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .botoesLinks {
+                a {
+                    font-size: 1.2rem !important;
+                }
+            }
+
+            #participacao {
+                grid-area: atuacao;
+                color: #d7f9ff;
+                text-align: justify;
+                font-size: 1.2rem;
             }
         }
     }
