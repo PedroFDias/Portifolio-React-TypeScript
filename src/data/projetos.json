@@ -2,16 +2,31 @@
     {
         "id": 1,
         "titulo": "Casa Cidada - ONG",
-        "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus serviços e alcançar maior autonomia por meio da tecnologia.",
+        "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus documentos, serviços e alcançar maior autonomia por meio da tecnologia.",
         "images": [
-            "imagens/projetos/casacidada2.png",
             "imagens/projetos/casacidada1.png",
+            "imagens/projetos/casacidada2.png",
             "imagens/projetos/casacidada3.png",
-            "imagens/projetos/casacidada4.png"
+            "imagens/projetos/casacidada4.png",
+            "imagens/projetos/casacidada5.png",
+            "imagens/projetos/casacidada6.png"
         ],
         "linkGit": "https://github.com/LucasDias2002/CasaCidada",
-        "tecnologias": ["Java Script","CSS","NodeJs","Express","Sequeliza","Cloudinary","PostgreSQL"],
-        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
+        "tecnologias": [
+            "Java Script",
+            "NodeJs",
+            "Express",
+            "Sequelize",
+            "CSS",
+            "Cloudinary",
+            "PostgreSQL",
+            "Postman"
+        ],
+        "participacao": [
+            "Desenvolvimento da API Restful",
+            "Integração com banco de dados",
+            "Teste com Insomnia e Postman"
+        ]
     },
     {
         "id": 2,
@@ -23,42 +38,78 @@
             "imagens/projetos/OrderMananger3.png",
             "imagens/projetos/OrderMananger4.png",
             "imagens/projetos/OrderMananger5.png",
+            "imagens/projetos/OrderMananger6.png",
             "imagens/projetos/OrderMananger7.png",
             "imagens/projetos/OrderMananger8.png"
         ],
         "linkGit": "https://github.com/PedroFDias/Order-Mananger",
-        "tecnologias": ["Java", "Spring Boot", "Spring Data JPA", "Hibernate", "PostgreSQL", "Lombok",  "Maven", "Insomnia"],
-        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
+        "tecnologias": [
+            "Java",
+            "Spring Boot",
+            "Spring Data JPA",
+            "Hibernate",
+            "PostgreSQL",
+            "Lombok",
+            "Maven",
+            "Insomnia"
+        ],
+        "participacao": [
+            "Desenvolvimento de API Restful",
+            "Integração com banco de dados",
+            "Testes com Insomnia e Postman"
+        ]
     },
     {
         "id": 3,
         "titulo": "SeachFipe",
-        "descricao": "Este projeto é uma aplicação Java (ou a linguagem que você usou) que permite consultar informações detalhadas sobre veículos utilizando a FIPE API. O programa faz uma requisição HTTP para a API e retorna dados como marca, modelo, ano e preço médio de veículos.",
+        "descricao": "Este projeto pessoal é uma aplicação Java que permite consultar informações detalhadas sobre veículos utilizando a FIPE API. O programa faz uma requisição HTTP para a API e retorna dados como marca, modelo, ano e preço médio de veículos.",
         "images": [
-            "imagens/projetos/OrderMananger1.png",
-            "imagens/projetos/OrderMananger2.png",
-            "imagens/projetos/OrderMananger3.png",
-            "imagens/projetos/OrderMananger4.png",
-            "imagens/projetos/OrderMananger5.png",
-            "imagens/projetos/OrderMananger7.png",
-            "imagens/projetos/OrderMananger8.png"
+            "imagens/projetos/seachFipe1.png",
+            "imagens/projetos/seachFipe2.png",
+            "imagens/projetos/seachFipe3.png",
+            "imagens/projetos/seachFipe4.png"
         ],
         "linkGit": "https://github.com/PedroFDias/SeachFipe",
-        "tecnologias": ["Java", "Spring Boot", "Maven"],
-        "participacao": ["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
+        "tecnologias": [
+            "Java",
+            "Spring Boot",
+            "Maven",
+            "Gson",
+            "HTTP Client",
+            "Insomnia"
+        ],
+        "participacao": [
+            "Desenvolvimento da lógica de consumo da API FIPE",
+            "Manipulação de JSON com Gson",
+            "Testes das requisições com Insomnia"
+        ]
     },
     {
         "id": 4,
-        "titulo": "Portifólio",
-        "descricao": "Este projeto é uma aplicação Java (ou a linguagem que você usou) que permite consultar informações detalhadas sobre veículos utilizando a FIPE API. O programa faz uma requisição HTTP para a API e retorna dados como marca, modelo, ano e preço médio de veículos.",
+        "titulo": "Portfólio",
+        "descricao": "Este projeto é um portfólio pessoal desenvolvido com React e TypeScript, criado para apresentar meus principais projetos, habilidades e experiências na área de desenvolvimento.",
         "images": [
             "imagens/projetos/portifolio1.png",
             "imagens/projetos/portifolio2.png",
             "imagens/projetos/portifolio3.png",
-            "imagens/projetos/portifolio4.png"
+            "imagens/projetos/portifolio4.png",
+            "imagens/projetos/portifolio5.png"
         ],
         "linkGit": "https://github.com/PedroFDias/Portifolio",
-        "tecnologias": ["CSS", "SCSS", "JavaScript"],
-        "participacao":["Desenvolvimento de API Restful", "Integração com banco de dados", "Teste com Insomnia e Postman"]
+        "tecnologias": [
+            "React",
+            "TypeScript",
+            "Framer Motion",
+            "Bootstrap",
+            "Swiper",
+            "React Typed",
+            "React Modal"
+        ],
+        "participacao": [
+            "Desenvolvimento completo da interface com React e TypeScript",
+            "Criação de animações com Framer Motion",
+            "Integração de carrossel com Swiper",
+            "Uso de tipagem estática para maior confiabilidade do código"
+        ]
     }
 ]
