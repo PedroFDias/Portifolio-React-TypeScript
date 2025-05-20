@@ -38,7 +38,7 @@ export function Inicio() {
                             <img id="imgPerfil" src="imagens/perfil2.png" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
                         </div>
                     </div>
-                    <a className="maisSobre" href="">Mais Sobre mim</a>
+                    <a className="maisSobre" href="#sobreMim">Mais Sobre mim</a>
                 </div>
             </div>
         </motion.div>
