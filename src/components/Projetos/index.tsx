@@ -50,7 +50,6 @@ export function Projeto() {
             <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-
                 className="MeusProjetos container">
                 <a className="Titulo" href="">Meus<span>Projetos</span></a>
                 <div id="projetos" className="projetos">
@@ -59,7 +58,7 @@ export function Projeto() {
                         <motion.div
                             initial={{ opacity: 0, y: 15 }}
                             whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
-                            viewport={{ once: false, amount: .3 }}
+                            viewport={{ once: false, amount: .5 }}
                             className="projeto" key={index}>
                             <h4>{projeto.titulo}</h4>
                             <img src={projeto.images[0]} alt={projeto.titulo} />
