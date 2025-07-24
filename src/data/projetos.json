@@ -1,5 +1,33 @@
 [
     {
+        "id": 5,
+        "titulo": "Auth Login",
+        "descricao": "Este projeto foi desenvolvido para praticar autenticação de tokens JWT com Java e Spring Secutiry. Fiz o front com React e TypeScript para melhor visualização dos processos.",
+        "images": [
+            "imagens/projetos/AuthLogin.png",
+            "imagens/projetos/AuthLogin2.png",
+            "imagens/projetos/AuthLogin3.png",
+            "imagens/projetos/AuthLogin5.png",
+            "imagens/projetos/AuthLogin4.png"
+        ],
+        "linkGit": "https://github.com/PedroFDias/AuthLogin-ReactTs",
+        "tecnologias": [
+            "Axios",
+            "Java",
+            "React",
+            "Spring Boot",
+            "Spring Security",
+            "Swagger",
+            "TypeScript"
+        ],
+        "participacao": [
+            "Implementação do backend com Java e Spring Security",
+            "Desenvolvimento completo da interface com React e TypeScript",
+            "Deploy do Back End na AWS EC2",
+            "Deploy do Front End no Vercel"
+        ]
+    },
+    {
         "id": 1,
         "titulo": "Casa Cidada - ONG",
         "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus documentos, serviços e alcançar maior autonomia por meio da tecnologia.",
@@ -110,34 +138,6 @@
             "Criação de animações com Framer Motion",
             "Integração de carrossel com Swiper",
             "Uso de tipagem estática para maior confiabilidade do código"
-        ]
-    },
-    {
-        "id": 5,
-        "titulo": "Auth Login",
-        "descricao": "Este projeto foi desenvolvido para praticar autenticação de tokens JWT com Java e Spring Secutiry. Fiz o front com React e TypeScript para melhor visualização dos processos.",
-        "images": [
-            "imagens/projetos/AuthLogin.png",
-            "imagens/projetos/AuthLogin2.png",
-            "imagens/projetos/AuthLogin3.png",
-            "imagens/projetos/AuthLogin5.png",
-            "imagens/projetos/AuthLogin4.png"
-        ],
-        "linkGit": "https://github.com/PedroFDias/AuthLogin-ReactTs",
-        "tecnologias": [
-            "Axios",
-            "Java",
-            "React",
-            "Spring Boot",
-            "Spring Security",
-            "Swagger",
-            "TypeScript"
-        ],
-        "participacao": [
-            "Implementação do backend com Java e Spring Security",
-            "Desenvolvimento completo da interface com React e TypeScript",
-            "Deploy do Back End na AWS EC2",
-            "Deploy do Front End no Vercel"
         ]
     }
 ]
