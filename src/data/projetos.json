@@ -29,35 +29,6 @@
         ]
     },
     {
-        "id": 1,
-        "titulo": "Casa Cidada - ONG",
-        "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus documentos, serviços e alcançar maior autonomia por meio da tecnologia.",
-        "images": [
-            "imagens/projetos/casacidada1.png",
-            "imagens/projetos/casacidada2.png",
-            "imagens/projetos/casacidada3.png",
-            "imagens/projetos/casacidada4.png",
-            "imagens/projetos/casacidada5.png",
-            "imagens/projetos/casacidada6.png"
-        ],
-        "linkGit": "https://github.com/LucasDias2002/CasaCidada",
-        "tecnologias": [
-            "Java Script",
-            "NodeJs",
-            "Express",
-            "Sequelize",
-            "CSS",
-            "Cloudinary",
-            "PostgreSQL",
-            "Postman"
-        ],
-        "participacao": [
-            "Desenvolvimento da API Restful",
-            "Integração com banco de dados",
-            "Teste com Insomnia e Postman"
-        ]
-    },
-    {
         "id": 2,
         "titulo": "Order Mananger - API REST",
         "descricao": "O OrderManager é um sistema backend desenvolvido com o fim de gerenciar de pedidos em um e-commerce. A aplicação permite operações completas de CRUD. É estruturado em camadas (Controller, Service, Repository), seguindo boas práticas da arquitetura RESTful.",
@@ -87,6 +58,35 @@
             "Desenvolvimento de API Restful",
             "Integração com banco de dados",
             "Testes com Insomnia e Postman"
+        ]
+    },
+    {
+        "id": 1,
+        "titulo": "Casa Cidada - ONG",
+        "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus documentos, serviços e alcançar maior autonomia por meio da tecnologia.",
+        "images": [
+            "imagens/projetos/casacidada1.png",
+            "imagens/projetos/casacidada2.png",
+            "imagens/projetos/casacidada3.png",
+            "imagens/projetos/casacidada4.png",
+            "imagens/projetos/casacidada5.png",
+            "imagens/projetos/casacidada6.png"
+        ],
+        "linkGit": "https://github.com/LucasDias2002/CasaCidada",
+        "tecnologias": [
+            "Java Script",
+            "NodeJs",
+            "Express",
+            "Sequelize",
+            "CSS",
+            "Cloudinary",
+            "PostgreSQL",
+            "Postman"
+        ],
+        "participacao": [
+            "Desenvolvimento da API Restful",
+            "Integração com banco de dados",
+            "Teste com Insomnia e Postman"
         ]
     },
     {
