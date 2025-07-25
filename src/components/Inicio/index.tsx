@@ -5,42 +5,71 @@ import { motion } from "framer-motion";
 
 export function Inicio() {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 1.5 } }}
-            viewport={{ once: false, amount: .3 }}
-            id="inicio" className="container">
+        <div id="inicio" className="container">
             <div className="container" id="apresentacao">
                 <div className="apresentacao">
                     <div className="apresentacao-script">
-                        <h6>Olá, eu me chamo</h6>
-                        <h1>Pedro Dias</h1>
-                        <h3>E sou <span className="text">
-                            <ReactTyped
-                                strings={['Desenvolvedor de Software', 'Estudante de Programação']}
-                                typeSpeed={50}
-                                backSpeed={50}
-                                loop
-                            />
-                        </span> </h3>
+                        <motion.h6
+                            initial={{ scale: 1.12, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                        >
+                            Olá, eu me chamo
+                        </motion.h6>
+                        <motion.h1
+                            initial={{ scale: 1.12, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.4 }}                       >
+                            Pedro Dias
+                        </motion.h1>
+                        <motion.h3
+                            initial={{ scale: 1.12, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.6 }}
+                        >
+                            E sou&nbsp;
+                            <span className="text">
+                                <ReactTyped
+                                    strings={[' desenvolvedor Java', 'desenvolvedor Back-end', 'aspirante Full-Stack', 'apaixonado por tecnologia']}
+                                    typeSpeed={50}
+                                    backSpeed={50}
+                                    loop
+                                />
+                            </span> </motion.h3>
                     </div>
-                    <div className="resumo">
+                    <motion.div
+                        initial={{ scale: 1.12, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1, delay: 0.8 }}
+                        className="resumo">
                         <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na PUC-Minas, com foco em
                             desenvolvimento backend e experiências em projetos práticos.
                         </p>
-                    </div>
-                    <div id="linksIcons">
+                    </motion.div>
+                    <motion.div
+                        initial={{ scale: 1.05, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 1, delay: 1 }}
+                        id="linksIcons">
                         <BotaoLink link="https://github.com/PedroFDias" icon="bi bi-github" />
                         <BotaoLink link="http://www.linkedin.com/in/pedrofdias" icon="bi bi-linkedin" />
-                    </div>
-                    <div className="circulo-fora">
+                    </motion.div>
+                    <motion.div
+                        initial={{ x: 10, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 1.2 }}
+                        className="circulo-fora">
                         <div id="imagemPerfil" className="circulo-dentro">
                             <img id="imgPerfil" src="imagens/perfil2.png" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
                         </div>
-                    </div>
-                    <a className="maisSobre" href="#sobreMim">Mais Sobre mim</a>
+                    </motion.div>
+                    <motion.a
+                        initial={{ x:-10, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 1.4 }}
+                        className="maisSobre" href="#sobreMim">Mais Sobre mim</motion.a>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }
