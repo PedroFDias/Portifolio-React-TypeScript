@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="footer container">
                 <div className="div1">
                     <div>
-                        <p>Desenvolvido com: <br/>HTML, CSS e JavaScript</p>
+                        <p>Desenvolvido com: <br/>ReactTS, TypeScript</p>
                     </div>
                     <div className="links">
                         <div>
