@@ -60,7 +60,7 @@ export function Inicio() {
                         transition={{ duration: 0.5, delay: 1.2 }}
                         className="circulo-fora">
                         <div id="imagemPerfil" className="circulo-dentro">
-                            <img id="imgPerfil" src="imagens/perfil2.png" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
+                            <img id="imgPerfil" src="imagens/perfil2.webp" alt="Foto de Perfil" className="w-full h-full rounded-full object-cover" />
                         </div>
                     </motion.div>
                     <motion.a

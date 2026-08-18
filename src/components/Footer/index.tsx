@@ -31,7 +31,7 @@ export default function Footer() {
                     <p>© 2025 Pedro Dias. Todos os direitos reservados.</p>
                 </div>
             </div>
-            <img className="mergulhadora" src="images/mergulhadora2.png" alt="" />
+            <img className="mergulhadora" src="images/mergulhadora2.webp" alt="" />
         </footer>
 
     );
