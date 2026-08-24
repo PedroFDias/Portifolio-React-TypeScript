@@ -22,7 +22,7 @@ export default function Contato() {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 1.5 } }}
                         viewport={{ once: true, amount: .2 }}
-                        href="https://wa.me/31989090902"><i className="bi bi-whatsapp"> (31) 98909-0902</i></motion.a>
+                        href="https://github.com/PedroFDias"><i className="bi bi-github"> PedroFDias</i></motion.a>
                     <motion.a
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 1.5 } }}

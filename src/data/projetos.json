@@ -113,32 +113,5 @@
             "Manipulação de JSON com Gson",
             "Testes das requisições com Insomnia"
         ]
-    },
-    {
-        "id": 4,
-        "titulo": "Portfólio",
-        "descricao": "Portfólio pessoal em React e TypeScript para apresentar projetos, habilidades e experiências em desenvolvimento de software.",
-        "images": [
-            "imagens/projetos/portifolio1.webp",
-            "imagens/projetos/portifolio2.webp",
-            "imagens/projetos/portifolio3.webp",
-            "imagens/projetos/portifolio4.webp",
-            "imagens/projetos/portifolio5.webp"
-        ],
-        "linkGit": "https://github.com/PedroFDias/Portifolio",
-        "tecnologias": [
-            "React",
-            "TypeScript",
-            "Framer Motion",
-            "Bootstrap",
-            "Swiper",
-            "React Typed"
-        ],
-        "participacao": [
-            "Desenvolvimento completo da interface com React e TypeScript",
-            "Criação de animações com Framer Motion",
-            "Integração de carrossel com Swiper",
-            "Uso de tipagem estática para maior confiabilidade do código"
-        ]
     }
 ]
