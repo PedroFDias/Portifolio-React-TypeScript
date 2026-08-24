@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "cargo": "Estagiário de Desenvolvimento de Software",
+    "empresa": "Stefanini IHM",
+    "inicio": "2025",
+    "fim": null,
+    "atual": true,
+    "projeto": "Rocha — logística portuária",
+    "descricao": "Atuação integral no projeto Rocha, solução de software para empresa de logística portuária, com desenvolvimento backend, integração de sistemas.",
+    "responsabilidades": [
+      "Implementação de feature/nova tela back e front",
+      "Correção de bugs no back e front",
+      "Prototipagem de telas no Figma",
+      "Documentação de código e treinamento para usuários",
+      "Banco de dados SQLServer"
+    ],
+    "tecnologias": [
+      "C#",
+      ".NET",
+      "SQL Server",
+      "Angular",
+      "TypeScript",
+      "Figma",
+      "Git"
+    ]
+  }
+]

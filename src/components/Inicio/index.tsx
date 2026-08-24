@@ -30,7 +30,7 @@ export function Inicio() {
                             E sou&nbsp;
                             <span className="text">
                                 <ReactTyped
-                                    strings={[' desenvolvedor Java', 'desenvolvedor Back-end', 'aspirante Full-Stack', 'apaixonado por tecnologia']}
+                                    strings={[' desenvolvedor Java', 'desenvolvedor Back-end', 'desenvolvedor Full-Stack', 'apaixonado por tecnologia']}
                                     typeSpeed={50}
                                     backSpeed={50}
                                     loop
@@ -42,7 +42,7 @@ export function Inicio() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
                         className="resumo">
-                        <p>Atualmente cursando Análise e Desenvolvimento de Sistemas na PUC-Minas, com foco em
+                        <p>Formado em Análise e Desenvolvimento de Sistemas pela PUC-Minas, com foco em
                             desenvolvimento backend e experiências em projetos práticos.
                         </p>
                     </motion.div>

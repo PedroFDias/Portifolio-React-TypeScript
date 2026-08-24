@@ -1,0 +1,287 @@
+#experiencia {
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+        min-height: 65vh;
+        margin: 0 auto;
+    }
+
+    .secao-cabecalho {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Titulo {
+        font-family: "Chakra Petch", sans-serif;
+        text-decoration: none;
+        font-size: 3rem;
+        color: #d7f9ff;
+        font-weight: bold;
+        background: transparent;
+        margin: 0;
+    }
+
+    .secao-subtitulo {
+        font-family: "Inter", sans-serif;
+        color: #d7f9ff;
+        opacity: 0.8;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .timeline {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .timeline-item {
+        display: grid;
+        grid-template-columns: minmax(200px, 280px) 20px minmax(0, 1fr);
+        column-gap: 20px;
+        align-items: start;
+        position: relative;
+    }
+
+    .timeline-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        gap: 6px;
+        padding-top: 2px;
+    }
+
+    .timeline-axis {
+        position: relative;
+        align-self: stretch;
+        width: 20px;
+    }
+
+    .timeline-axis::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -16px;
+        bottom: -16px;
+        width: 1px;
+        transform: translateX(-50%);
+        background: rgba(0, 238, 255, 0.22);
+    }
+
+    .timeline-item:first-child .timeline-axis::before {
+        top: 8px;
+    }
+
+    .timeline-item:last-child .timeline-axis::before {
+        bottom: 8px;
+    }
+
+    .timeline-marker {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 13px;
+        height: 13px;
+        margin: 8px auto 0;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 238, 255, 0.7);
+        background: #021017;
+        box-sizing: border-box;
+    }
+
+    .timeline-item.atual .timeline-marker {
+        background: #0ef;
+        border-color: #0ef;
+        box-shadow: 0 0 0 4px rgba(0, 238, 255, 0.12);
+    }
+
+    .experiencia-card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: max-content;
+        background-color: #021017;
+        border-radius: 12px;
+        border: 1px solid #00474d36;
+        padding: 16px 18px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .timeline-item.atual .experiencia-card {
+        border-color: rgba(0, 238, 255, 0.28);
+    }
+
+    .experiencia-card:hover {
+        transform: translateY(-4px);
+        border-color: #0ef;
+        box-shadow: 0 12px 28px rgba(0, 238, 255, 0.12);
+    }
+
+    .periodo {
+        font-family: "Inter", sans-serif;
+        font-size: 0.82rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: #8aa0ae;
+        margin: 0;
+    }
+
+    .badge-atual {
+        font-family: "Inter", sans-serif;
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #081b29;
+        background: #0ef;
+        border-radius: 999px;
+        padding: 3px 9px;
+        width: fit-content;
+    }
+
+    .cargo {
+        font-family: "Chakra Petch", sans-serif;
+        color: #d7f9ff;
+        font-size: 1.05rem;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1.35;
+    }
+
+    .empresa {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: #0ef;
+        margin: 0;
+    }
+
+    .projeto {
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: #8aa0ae;
+        margin: 0;
+    }
+
+    .meta {
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        color: #8aa0ae;
+        margin: 0;
+    }
+
+    .descricao {
+        font-family: "Inter", sans-serif;
+        font-size: 0.88rem;
+        font-weight: 400;
+        line-height: 1.55;
+        color: #d7f9ff;
+        opacity: 0.9;
+        margin: 0;
+    }
+
+    .responsabilidades {
+        margin: 0;
+        padding-left: 1.05rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .responsabilidades li {
+        font-family: "Inter", sans-serif;
+        font-size: 0.84rem;
+        font-weight: 400;
+        line-height: 1.45;
+        color: #d7f9ff;
+        opacity: 0.88;
+    }
+
+    .experiencia-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        list-style: none;
+        margin: 2px 0 0;
+        padding: 0;
+    }
+
+    .experiencia-chips li {
+        font-family: "Inter", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #0ef;
+        border: 1px solid rgba(0, 238, 255, 0.35);
+        border-radius: 999px;
+        padding: 3px 8px;
+        background: rgba(0, 238, 255, 0.08);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #experiencia {
+        .experiencia {
+            gap: 32px;
+        }
+
+        .Titulo {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .secao-cabecalho {
+            max-width: 100%;
+        }
+
+        .secao-subtitulo {
+            text-align: center;
+        }
+
+        .timeline-item {
+            grid-template-columns: 16px minmax(0, 1fr);
+            column-gap: 14px;
+        }
+
+        .timeline-meta {
+            grid-column: 2;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .timeline-axis {
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            width: 16px;
+        }
+
+        .experiencia-card {
+            grid-column: 2;
+            max-width: 100%;
+            padding: 14px 14px;
+        }
+
+        .cargo {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #experiencia .experiencia-card {
+        transition: none;
+    }
+
+    #experiencia .experiencia-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}

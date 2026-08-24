@@ -12,7 +12,7 @@ export function SobreMim() {
                     viewport={{ once: true, amount: .2 }}
                     className="info">
                     <h2>Sobre mim</h2>
-                    <p>Sou um desenvolvedor em formação, apaixonado por backend e pela criação de soluções que conectam dados a pessoas. Trabalho com <span className="tec1">&lt;Java + Spring&gt;</span>, <span className="tec2">&lt;JavaScript + Express&gt;</span>, <span className="tec3">&lt;TypeScript + React&gt;</span>, PostgreSQL, MySQL e MongoDB, além de ter familiaridade com metodologias ágeis como o Scrum. Tenho experiência acadêmica e pessoal com API's REST, integração com bancos, consumo de APIs externas e sistemas CRUD.</p>
+                    <p>Sou Analista de Sistemas, com experiência em desenvolvimento backend e frontend. Trabalho com <span className="tec1">&lt;Java + Spring&gt;</span>, <span className="tec3">&lt;TypeScript + React&gt;</span>, PostgreSQL, MySQL e MongoDB, além de ter familiaridade com metodologias ágeis como o Scrum. Tenho experiência acadêmica e pessoal com API's REST, integração com bancos, consumo de APIs externas e sistemas CRUD.</p>
                     <img src="imagens/desenvolvedor.webp" alt="" />
                 </motion.div>
                 <motion.div

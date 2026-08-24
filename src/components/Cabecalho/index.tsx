@@ -4,6 +4,7 @@ import './Cabecalho.css'
 const LINKS = [
     { href: '#inicio', id: 'inicio', label: 'Início' },
     { href: '#sobreMim', id: 'sobreMim', label: 'Sobre' },
+    { href: '#experiencia', id: 'experiencia', label: 'Experiência' },
     { href: '#meusProjetos', id: 'meusProjetos', label: 'Projetos' },
     { href: '#sessaoContato', id: 'sessaoContato', label: 'Contato' },
 ] as const;

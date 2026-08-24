@@ -51,7 +51,7 @@ export function Projeto() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="MeusProjetos container">
                 <div className="secao-cabecalho">
-                    <h2 className="Titulo">Meus <span>Projetos</span></h2>
+                    <h2 className="Titulo">Meus Projetos</h2>
                     <p className="secao-subtitulo">
                         Trabalhos práticos de backend e full-stack, com APIs, autenticação e interfaces em React.
                     </p>
