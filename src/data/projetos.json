@@ -4,12 +4,12 @@
         "titulo": "Auth Login",
         "descricao": "Aplicação full-stack para praticar autenticação com tokens JWT, Java e Spring Security. O front em React e TypeScript deixa o fluxo de login e sessão visível de ponta a ponta.",
         "images": [
-            "imagens/projetos/AuthLogin.png",
-            "imagens/projetos/AuthLogin2.png",
-            "imagens/projetos/AuthLogin3.png",
-            "imagens/projetos/AuthLogin6.png",
-            "imagens/projetos/AuthLogin5.png",
-            "imagens/projetos/AuthLogin4.png"
+            "imagens/projetos/AuthLogin.webp",
+            "imagens/projetos/AuthLogin2.webp",
+            "imagens/projetos/AuthLogin3.webp",
+            "imagens/projetos/AuthLogin6.webp",
+            "imagens/projetos/AuthLogin5.webp",
+            "imagens/projetos/AuthLogin4.webp"
         ],
         "linkGit": "https://github.com/PedroFDias/AuthLogin-ReactTs",
         "tecnologias": [
@@ -33,15 +33,15 @@
         "titulo": "Order Manager - API REST",
         "descricao": "API backend para gerenciar pedidos em um e-commerce, com operações completas de CRUD. A aplicação segue camadas (Controller, Service, Repository) e boas práticas REST.",
         "images": [
-            "imagens/projetos/OrderMananger0.png",
-            "imagens/projetos/OrderMananger1.png",
-            "imagens/projetos/OrderMananger2.png",
-            "imagens/projetos/OrderMananger3.png",
-            "imagens/projetos/OrderMananger4.png",
-            "imagens/projetos/OrderMananger5.png",
-            "imagens/projetos/OrderMananger6.png",
-            "imagens/projetos/OrderMananger7.png",
-            "imagens/projetos/OrderMananger8.png"
+            "imagens/projetos/OrderMananger0.webp",
+            "imagens/projetos/OrderMananger1.webp",
+            "imagens/projetos/OrderMananger2.webp",
+            "imagens/projetos/OrderMananger3.webp",
+            "imagens/projetos/OrderMananger4.webp",
+            "imagens/projetos/OrderMananger5.webp",
+            "imagens/projetos/OrderMananger6.webp",
+            "imagens/projetos/OrderMananger7.webp",
+            "imagens/projetos/OrderMananger8.webp"
         ],
         "linkGit": "https://github.com/PedroFDias/Order-Mananger",
         "tecnologias": [
@@ -65,12 +65,12 @@
         "titulo": "Casa Cidadã - ONG",
         "descricao": "Sistema acadêmico para apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma organiza documentos e serviços para dar mais autonomia operacional à instituição.",
         "images": [
-            "imagens/projetos/casacidada1.png",
-            "imagens/projetos/casacidada2.png",
-            "imagens/projetos/casacidada3.png",
-            "imagens/projetos/casacidada4.png",
-            "imagens/projetos/casacidada5.png",
-            "imagens/projetos/casacidada6.png"
+            "imagens/projetos/casacidada1.webp",
+            "imagens/projetos/casacidada2.webp",
+            "imagens/projetos/casacidada3.webp",
+            "imagens/projetos/casacidada4.webp",
+            "imagens/projetos/casacidada5.webp",
+            "imagens/projetos/casacidada6.webp"
         ],
         "linkGit": "https://github.com/LucasDias2002/CasaCidada",
         "tecnologias": [
@@ -94,10 +94,10 @@
         "titulo": "SearchFipe",
         "descricao": "Aplicação Java que consulta a API FIPE e devolve marca, modelo, ano e preço médio de veículos. O programa faz a requisição HTTP e trata o JSON retornado.",
         "images": [
-            "imagens/projetos/seachFipe1.png",
-            "imagens/projetos/seachFipe2.png",
-            "imagens/projetos/seachFipe3.png",
-            "imagens/projetos/seachFipe4.png"
+            "imagens/projetos/seachFipe1.webp",
+            "imagens/projetos/seachFipe2.webp",
+            "imagens/projetos/seachFipe3.webp",
+            "imagens/projetos/seachFipe4.webp"
         ],
         "linkGit": "https://github.com/PedroFDias/SeachFipe",
         "tecnologias": [
@@ -119,11 +119,11 @@
         "titulo": "Portfólio",
         "descricao": "Portfólio pessoal em React e TypeScript para apresentar projetos, habilidades e experiências em desenvolvimento de software.",
         "images": [
-            "imagens/projetos/portifolio1.png",
-            "imagens/projetos/portifolio2.png",
-            "imagens/projetos/portifolio3.png",
-            "imagens/projetos/portifolio4.png",
-            "imagens/projetos/portifolio5.png"
+            "imagens/projetos/portifolio1.webp",
+            "imagens/projetos/portifolio2.webp",
+            "imagens/projetos/portifolio3.webp",
+            "imagens/projetos/portifolio4.webp",
+            "imagens/projetos/portifolio5.webp"
         ],
         "linkGit": "https://github.com/PedroFDias/Portifolio",
         "tecnologias": [
