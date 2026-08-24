@@ -8,18 +8,20 @@ const LINKS = [
     { href: '#sessaoContato', id: 'sessaoContato', label: 'Contato' },
 ] as const;
 
+type SectionId = (typeof LINKS)[number]['id'];
+
 export function Header() {
 
     const [scrolled, setScroll] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [ativa, setAtiva] = useState('inicio');
+    const [ativa, setAtiva] = useState<SectionId>('inicio');
 
     useEffect(() => {
         const onScroll = () => {
             setScroll(window.scrollY > 8);
 
             const offset = window.scrollY + 96;
-            let current = LINKS[0].id;
+            let current: SectionId = LINKS[0].id;
 
             for (const link of LINKS) {
                 const section = document.getElementById(link.id);
