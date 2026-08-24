@@ -2,7 +2,7 @@
     {
         "id": 5,
         "titulo": "Auth Login",
-        "descricao": "Este projeto foi desenvolvido para praticar autenticação de tokens JWT com Java e Spring Secutiry. Fiz o front com React e TypeScript para melhor visualização dos processos.",
+        "descricao": "Aplicação full-stack para praticar autenticação com tokens JWT, Java e Spring Security. O front em React e TypeScript deixa o fluxo de login e sessão visível de ponta a ponta.",
         "images": [
             "imagens/projetos/AuthLogin.png",
             "imagens/projetos/AuthLogin2.png",
@@ -30,8 +30,8 @@
     },
     {
         "id": 2,
-        "titulo": "Order Mananger - API REST",
-        "descricao": "O OrderManager é um sistema backend desenvolvido com o fim de gerenciar de pedidos em um e-commerce. A aplicação permite operações completas de CRUD. É estruturado em camadas (Controller, Service, Repository), seguindo boas práticas da arquitetura RESTful.",
+        "titulo": "Order Manager - API REST",
+        "descricao": "API backend para gerenciar pedidos em um e-commerce, com operações completas de CRUD. A aplicação segue camadas (Controller, Service, Repository) e boas práticas REST.",
         "images": [
             "imagens/projetos/OrderMananger0.png",
             "imagens/projetos/OrderMananger1.png",
@@ -62,8 +62,8 @@
     },
     {
         "id": 1,
-        "titulo": "Casa Cidada - ONG",
-        "descricao": "Casa Cidadã é um sistema desenvolvido como projeto acadêmico com o objetivo de apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma auxilia a ONG a organizar seus documentos, serviços e alcançar maior autonomia por meio da tecnologia.",
+        "titulo": "Casa Cidadã - ONG",
+        "descricao": "Sistema acadêmico para apoiar uma ONG que oferece abrigo a pessoas em situação de rua. A plataforma organiza documentos e serviços para dar mais autonomia operacional à instituição.",
         "images": [
             "imagens/projetos/casacidada1.png",
             "imagens/projetos/casacidada2.png",
@@ -74,7 +74,7 @@
         ],
         "linkGit": "https://github.com/LucasDias2002/CasaCidada",
         "tecnologias": [
-            "Java Script",
+            "JavaScript",
             "NodeJs",
             "Express",
             "Sequelize",
@@ -91,8 +91,8 @@
     },
     {
         "id": 3,
-        "titulo": "SeachFipe",
-        "descricao": "Este projeto pessoal é uma aplicação Java que permite consultar informações detalhadas sobre veículos utilizando a FIPE API. O programa faz uma requisição HTTP para a API e retorna dados como marca, modelo, ano e preço médio de veículos.",
+        "titulo": "SearchFipe",
+        "descricao": "Aplicação Java que consulta a API FIPE e devolve marca, modelo, ano e preço médio de veículos. O programa faz a requisição HTTP e trata o JSON retornado.",
         "images": [
             "imagens/projetos/seachFipe1.png",
             "imagens/projetos/seachFipe2.png",
@@ -117,7 +117,7 @@
     {
         "id": 4,
         "titulo": "Portfólio",
-        "descricao": "Este projeto é um portfólio pessoal desenvolvido com React e TypeScript, criado para apresentar meus principais projetos, habilidades e experiências na área de desenvolvimento.",
+        "descricao": "Portfólio pessoal em React e TypeScript para apresentar projetos, habilidades e experiências em desenvolvimento de software.",
         "images": [
             "imagens/projetos/portifolio1.png",
             "imagens/projetos/portifolio2.png",
